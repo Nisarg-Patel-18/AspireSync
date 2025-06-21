@@ -21,5 +21,9 @@
   "main": "server.js",
   "scripts": {
     "test": "test"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.16.0"
   }
 }
