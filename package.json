@@ -20,10 +20,15 @@
   "type": "commonjs",
   "main": "server.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "dev": "nodemon server.js"
   },
   "dependencies": {
+    "@tailwindcss/cli": "^4.1.10",
     "express": "^5.1.0",
     "mongoose": "^8.16.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.1.10"
   }
 }
