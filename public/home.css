@@ -1,16 +1,40 @@
 :root{
     --highlight-color: #95818D;
     --hero-color: #782bc5;
+    --gradient: linear-gradient(white, #d6afe0)
+}
+body::-webkit-scrollbar{
+    display:none;
 }
 button#loginBtn:hover{
-    /* background-color: #782bc5; */
-    color: black;
-    transition: 1.75s 50ms ease-in-out;
-    background: linear-gradient(to top, #b23ee4,#d199e9,  #e2cbf8);
+    color: white;
+    transition: 0.75s 50ms ease-in-out;
+    background: linear-gradient(to top, #782bc5, #62117d);
 }
 nav ul li:hover{
     color: #62117d;
     text-decoration: underline;
     text-decoration-color: #95818D;
     text-decoration-thickness: 1px;
+}
+div.cta button#studentCta:hover{
+    border: 1px solid #3917e2;
+    background-color: rgba(95, 158, 160, 0);
+    transition: 01s 0s ease-in-out;
+    color: #3917e2;
+    box-shadow: 0px 0px 10px 5px #782bc5;
+}
+div.cta button#companyCta:hover{
+    border: 1px solid #3917e2;
+    background-color: rgba(95, 158, 160, 0);
+    transition: 01s 0s ease-in-out;
+    color: #3917e2;
+    box-shadow: 0px 0px 10px 5px #782bc5;
+}
+div.cta div.next{
+    display: none;
+}
+div.cta button:hover div.next{
+    display: block;
+    transition: 1s 0s ease-in-out;
 }

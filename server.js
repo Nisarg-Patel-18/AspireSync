@@ -6,7 +6,7 @@
     await mongoose.connect('mongodb://localhost:27017/AsyncSync');
     
     app.get('/', (req, res)=>{
-        res.sendFile('./public/homePage/home.html', {root: __dirname})
+        res.sendFile('./public/home.html', {root: __dirname})
     })
     
     app.listen(port, () => {

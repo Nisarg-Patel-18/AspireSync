@@ -1,32 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Comfortaa:wght@300..700&family=Inconsolata:wght@200..900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Comfortaa:wght@300..700&family=Inconsolata:wght@200..900&family=Kalam:wght@300;400;700&family=Pacifico&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=add_2" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_right_alt" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AspireSync</title>
-    <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="../src/output.css">
+    <link rel="shortcut icon" href="./media/AspireSyncLogo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="./output.css" />
 </head>
-<body>
+
+<body class="w-[100vw] h-[100vh] bg-linear-to-b from-white via-[#dcc0e3] to-[#d7a6e3] bg-no-repeat">
     <nav class="navbar w-[100vw] h-[8vh] flex">
-        <img src="./media/AspireSyncLogo.png" alt="" class="logoImage w-[5vh] h-[5vh] mr-[10px] ml-[2vh] self-center rounded-[50%]">
-        <h1 class="brandlogo font-[Inconsolata] text-[25px] self-center text-fuchsia-500">Aspire</h1>
-        <h1 class="brandlogo font-[Comfartaa] text-[25px] self-center text-[#b317e2]">Sync</h1>
+        <img src="./media/AspireSyncLogo.png" alt=""
+            class="logoImage w-[5vh] h-[5vh] mr-[10px] ml-[2vh] self-center rounded-[50%]" />
+        <h1 class="brandlogo font-[Inconsolata] text-[25px] self-center text-fuchsia-500">
+            Aspire
+        </h1>
+        <h1 class="brandlogo font-[Comfartaa] text-[25px] self-center text-[#b317e2]">
+            Sync
+        </h1>
         <ul class="navItemsUl ml-[50vw] mt-[1vh] flex gap-[40px] text-[#782bc5] font-[Advent_Pro]">
-            <li class="text-[30px]"><a href="home.html" class="navItemsA ">Home</a></li>
-            <li class="text-[30px]"><a href="home.html" class="navItemsA">About Us</a></li>
-            <li class="text-[30px]"><a href="home.html" class="navItemsA">Contact</a></li>
-            <li ><button id="loginBtn" class="w-[10vw] h-[7vh] rounded-[10px] text-[20px] border">Login/Sign Up</button></li>
+            <li class="text-[30px]">
+                <a href="home.html" class="navItemsA">Home</a>
+            </li>
+            <li class="text-[30px]">
+                <a href="home.html" class="navItemsA">About Us</a>
+            </li>
+            <li class="text-[30px]">
+                <a href="home.html" class="navItemsA">Contact</a>
+            </li>
+            <li>
+                <button id="loginBtn" class="w-[10vw] h-[7vh] rounded-[10px] text-[20px] border">
+                    Login/Sign Up
+                </button>
+            </li>
         </ul>
     </nav>
-    <main>
-        <h1>Main Text</h1>
-        <div class="backgroundShape"></div>
+    <main class="h-[72vh] mt-[20vh] relative">
+        <div class="hero justify-self-start ml-[2vw]">
+            <img class="absolute right-[20vw] z-10 bottom-0" src="./media/student.png" alt="" />
+            <img class="h-[90vh] opacity-60 absolute right-[8vw] bottom-[0vh]" src="./media/employee.png" alt="" />
+            <h1 class="font-[Sansita] text-[4em]">Empowering Students.</h1>
+            <br />
+            <h2 class="font-[Kalam] text-[3em] text-[#6821D4]">
+                Rewarding Ambitions
+            </h2>
+            <h3 class="w-[28vw]">
+                AspireSync connects student job applications with exclusive offers
+                from top brands — giving students more for every career step they
+                take.
+            </h3>
+            <div class="cta mt-[14vh] w-fit flex flex-col gap-[2vh]">
+                <button id="studentCta"
+                    class="w-[15vw] h-[8vh] rounded-[40px] font-mono text-[1.25em] bg-[#3917e2] text-[#e6d3a3] content-center justify-center flex">
+                    <h1 class="self-center justify-self-center">Explore Jobs</h1>
+                    <div class="next self-center material-symbols-outlined">arrow_right_alt</div>
+                </button>
+                <button id="companyCta"
+                    class="w-[15vw] h-[8vh] rounded-[40px] font-mono text-[1.25em] bg-[#3917e2] text-[#e6d3a3] content-center justify-center flex">
+                    <h1 class="self-center justify-self-center">Partner With Us</h1>
+                    <div class="next self-center material-symbols-outlined">arrow_right_alt</div>
+                </button>
+            </div>
+        </div>
+        <div class="trustGain ml-[2vw]">
+            <h1 class="text-[30px] text-[#504049] mt-[20vh]">Trusted By</h1>
+            <span class="flex text-[38px] text-[#504049] font-bold content-center self-center">
+                <h1 id="companiesCount">100</h1>
+                <h1 class="self-center material-symbols-outlined">add_2</h1>
+                <h3 class="self-center text-[25px] ml-[0.75vw]">Companies</h3>
+            </span>
+        </div>
     </main>
 
     <script src="home.js"></script>
 </body>
+
 </html>
